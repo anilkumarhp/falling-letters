@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+	padding: 0;
+}
+
+body {
+	
+    overflow: hidden;
+    height: 100%;
+}
+
+#divs {
+    height: 100%;
+    width: 100%;
+}
+/* .char-drop */
+.drops{
+    height: 100%;
+    width: 100%;
+	position: absolute;
+    font-size: 2rem;
+    /* top: -10; */
+    text-shadow: 3px 2px 2px #000000;
+    margin: 0;
+    padding: 0;
+    animation-name: drop;
+    /* translate: rotateX(360deg) 5s ease; */
+    /* animation-duration: 10s; */
+
+}
+
+@keyframes drop {
+    from{ transform: translateY(-5%)}
+    to{transform: translateY(120%)}
+}
+
+
+
