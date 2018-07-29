@@ -1,8 +1,9 @@
 function randomColor(){
   let colorGen =  "0123456789ABCDEF";
+  let len = colorGen.length;
   let color = "#";
   for(let i = 0; i < 6; i++) {
-    color += colorGen[Math.floor(Math.random()*16)];
+    color += colorGen[Math.floor(Math.random()*len)];
   }
 
   return color;
@@ -11,7 +12,7 @@ function randomColor(){
 function randomChar(){
   let letters = "123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM";
   let len = letters.length;
-  let char =  letters[Math.floor(Math.random()*60)]; 
+  let char =  letters[Math.floor(Math.random()*len)]; 
   return char;
 }
 
